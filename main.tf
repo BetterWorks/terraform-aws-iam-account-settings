@@ -2,7 +2,7 @@ data "aws_caller_identity" "default" {
 }
 
 module "label" {
-  source     = "git::https://github.com/betterworks/terraform-null-label.git?ref=tf-upgrade"
+  source     = "git::https://github.com/betterworks/terraform-null-label.git?ref=tags/1.0.0-terraform-1"
   enabled    = var.enabled
   namespace  = var.namespace
   stage      = var.stage
